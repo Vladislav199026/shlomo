@@ -888,28 +888,40 @@ main.main{
             padding: 13px 10px;
             .row{
                 padding-bottom: 14px;
+                &:last-child{
+                    padding-bottom: 0px;
+                }
                 p{
                     font: 400 18px/21px 'Arimo', sans-serif;
                     color: #797979;
                     unicode-bidi: bidi-override;
                 }
-                strong, number, date{
+                strong{
                     font: 700 20px/23px 'Arimo', sans-serif;
                     color: #21325E;
                     unicode-bidi: bidi-override;
                 }
             }
             .block-3,
-            .block-4,
-            .block-5{
+            .block-4{
                 display: flex;
                 justify-content: space-between;
-                a{
-                    font: 700 20px/23px 'Arimo', sans-serif;
-                    color: #009c41;
-                    text-decoration: none;
-                    margin-right: 15px;
+                
+            }
+            .block-5{
+                display: flex;
+                flex-direction: column;
+                & > div{
+                    display: flex;
+                    justify-content: space-between;
+                    a{
+                        font: 700 20px/23px 'Arimo', sans-serif;
+                        color: #009c41;
+                        text-decoration: none;
+                        // margin-right: 10px;
+                    }
                 }
+                
             }
         }
     }
